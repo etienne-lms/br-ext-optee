@@ -1,0 +1,14 @@
+config BR2_PACKAGE_OPTEE_TEST
+	bool "optee_test"
+	help
+	  http://github.org/OP-TEE/optee_test
+
+if BR2_PACKAGE_OPTEE_TEST
+
+config BR2_PACKAGE_OPTEE_TEST_SDK
+	string "OPTEE SDK path"
+	default ""
+	help
+	  some help
+
+endif
