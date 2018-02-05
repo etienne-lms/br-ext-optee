@@ -11,4 +11,10 @@ config BR2_PACKAGE_OPTEE_EXAMPLES_SDK
 	help
 	  some help
 
+config BR2_PACKAGE_OPTEE_EXAMPLES_CROSS_COMPILE
+	string "OPTEE cross compiler"
+	default ""
+	help
+	  some help
+
 endif
