@@ -16,7 +16,8 @@ endef
 
 define OPTEE_EXAMPLES_INSTALL_TAS
 	@$(foreach f,$(wildcard $(@D)/*/ta/out/*.ta), \
-		$(INSTALL) -v -D -p  --mode=444 \
+		mkdir -p $(TARGET_DIR)/lib/optee_armtz && \
+		$(INSTALL) -v -p  --mode=444 \
 			--target-directory=$(TARGET_DIR)/lib/optee_armtz $f \
 			&&) true
 endef
